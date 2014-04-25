@@ -14,6 +14,7 @@ object KafkaUtilsBuild extends Build {
     retrieveManaged := true,
     transitiveClassifiers in Scope.GlobalScope := Seq("sources"),
     resolvers ++= Seq(
+      "oschina" at "http://maven.oschina.net/content/groups/public/",
       "sonatype-snapshots" at "http://oss.sonatype.org/content/repositories/snapshots",
       "sonatype-releases"  at "http://oss.sonatype.org/content/repositories/releases",
       "Typesafe Repository" at "http://repo.typesafe.com/typesafe/releases/",
